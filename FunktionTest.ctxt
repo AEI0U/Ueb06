@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=FunktionTest
+comment0.text=\r\n\ \ \ \ Klasse\ FunktionTest\r\n\r\n\ @version\ Ueb06\r\n\ @author\ \ JKrier,\ JVogt\r\n\r\n
+comment1.params=
+comment1.target=FunktionTest()
+comment1.text=\r\n\ Standard-Konstruktor\ fuer\ TestMyUeb6Methods\r\n
+comment2.params=
+comment2.target=void\ run()
+comment2.text=\r\n\ run\ -->\ laesst\ die\ MyUeb6Methods-Test's\ ablaufen\r\n\r\n
+comment3.params=
+comment3.target=void\ testeMittel()
+comment3.text=\r\n\ \ testeMittel\:\ testet\ die\ Funktion\ berechneMittel\ der\ Klasse\ Funktion\r\n\r\n
+comment4.params=
+comment4.target=void\ testeAnzahl()
+comment4.text=\r\n\ \ testeAnzahl\:\ testet\ die\ Funktion\ berechneAnzahl\ der\ Klasse\ Funktion\r\n\r\n
+comment5.params=
+comment5.target=void\ testeSort()
+comment5.text=\r\n\ \ testeSort\:\ testet\ die\ Funktion\ insertionSort\ der\ Klasse\ Funktion\r\n\r\n
+comment6.params=eingabe
+comment6.target=int\ readlnInt(java.lang.String)
+comment6.text=\r\n\ Einlesen\ einzugebener\ Integer\ Werte.\r\n\r\n\ \ @param\ \ Eingabeaufforderung\ Der\ Eingabe-Aufforderungs-Text\r\n\ \ @return\ die\ Eingabe-Zahl\r\n
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+comment7.text=\r\n\ \ main\ Methode\ Ausfuehren\ des\ interaktiven\ Tests.\r\n\ \ @param\ args\ Kommandozeilenparameter\r\n
+numComments=8

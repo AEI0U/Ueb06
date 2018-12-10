@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Funktion
+comment0.text=\r\n\r\n\ \ Klasse\ Funktion\ (Arithmetisches\ Mittel,\ Anzahl\ reiner\ Textstrings,\ Array\ sortieren)\r\n\ @author\ JKrier,\ JVogt\r\n\ @version\ Ueb06\r\n
+comment1.params=
+comment1.target=Funktion()
+comment1.text=\r\n\ Konstruktor\ der\ Klasse\ Funktion\r\n
+comment2.params=array
+comment2.target=double[]\ berechneWerte(double[])
+comment2.text=\r\n\ \ berechneWerte\ berechnet\ das\ Arithmetische\ Mittel\ eines\ Arrays\ sowie\ den\ Messwert,\ der\ am\ n\u00E4chsten\ daran\ liegt\ und\ den\ der\ am\ weitesten\ davon\ entfernt\ ist.\r\n\r\n\ @param\ double\ Array,\ fuer\ das\ die\ Werte\ berechnet\ werden\r\n\ @return\ \ MinWert,\ MittelWert,\ MaxWert\r\n
+comment3.params=array
+comment3.target=int\ berechneAnzahl(java.lang.String[])
+comment3.text=\r\n\ \ berechneAnzahl\ -\ gibt\ die\ Anzahl\ reiner\ Textstrings\ eines\ Arrays\ an\r\n\r\n\ @param\ \ eingabeString\ \ \ der\ zu\ untersuchende\ String\r\n\ @return\ \ \ \ \ \ \ \ true\ \=\=\ enthaelt\ nur\ Buchstaben,\ false\ \=\=\ enthaelt\ NICHT\ nur\ Buchstaben\r\n
+comment4.params=array
+comment4.target=void\ insertionSort(int[])
+comment4.text=\r\n\ \ insertionSort\ -\ Sortiert\ das\ uebergebene\ int-Array\r\n\r\n\ @param\ das\ Array,\ das\ sortiert\ werden\ soll\r\n
+numComments=5
