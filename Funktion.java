@@ -20,7 +20,7 @@ public class Funktion{
    * @param double Array, fuer das die Werte berechnet werden
    * @return  MinWert, MittelWert, MaxWert
    */
-   public static double[] berechneWerte(double array[] ){
+   public static double[] berechneWerte(double array[]){
 
         double sum = 0.0;
         double mittel = 0.0;
@@ -48,21 +48,23 @@ public class Funktion{
 
        
 
-        return new double[] { min, mittel, max };
+        return new double[] {min, mittel, max};
     }
 
   /**
    *  berechneAnzahl - gibt die Anzahl reiner Textstrings eines Arrays an
    *
    * @param  eingabeString   der zu untersuchende String
-   * @return        true == enthaelt nur Buchstaben, false == enthaelt NICHT nur Buchstaben
+   * @return  Anzahl reiner Buchstabenstrings. Strings mit Leerzeichen werden nicht dazugezaehlt
    */
    public static int berechneAnzahl(String[] array){
        int anzahl = array.length;
-       //Pattern mit den erlaubten Zeichen
+       
        for (int i = 0; i<array.length; i++){
-           String pattern =  "[a-z,A-Z,ä-ü,Ä-Ü,ß,ẞ]*"; // das zweite scharfe s ist das "große" ß
+           // Pattern mit den erlaubten Zeichen
+           String pattern ="[a-z,A-Z,ä-ü,Ä-Ü,ß]*“;
            Pattern p = Pattern.compile(pattern);
+           //Matcher zum ueberpruefen, ob das Zeichen im Patter enthalten ist
            Matcher m = p.matcher(array[i]);
            boolean b = m.matches();
            if(b == false){
