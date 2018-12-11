@@ -13,7 +13,7 @@ import java.util.Scanner;
  public class FunktionTest{
     private Scanner input;
 
-    private static final int WERTE =  1;
+    private static final int MITTEL=  1;
     private static final int ANZAHL = 2;
     private static final int SORT   = 3;
     private static final int ENDE   = 0;
@@ -21,7 +21,7 @@ import java.util.Scanner;
     private static final String INT_WERT = "Hier bitte eine ganze Zahl eingeben!";
 
    /**
-    * Standard-Konstruktor fuer TestMyUeb6Methods
+    * Standard-Konstruktor der Testklasse
     */
    public FunktionTest(){
        input = new Scanner(System.in);
@@ -39,7 +39,7 @@ import java.util.Scanner;
                  wahl = readlnInt("\n\n Auswahl: \n 1 = Artithmetisches Mittel berechnen \n 2 = Anzahl reiner Text Strings\n 3 = Insertion Sort"
                                  +"\n 0 =  Ende\n");
                  switch (wahl){
-                    case WERTE :
+                    case MITTEL :
                          testeMittel();
                          break;
                     case ANZAHL :
@@ -149,7 +149,7 @@ import java.util.Scanner;
    }
 
    /**
-     *  main Methode Ausfuehren des interaktiven Tests.
+     *  main Methode Ausfuehren des Tests.
      *  @param args Kommandozeilenparameter
      */
     public static void main(String[] args){
