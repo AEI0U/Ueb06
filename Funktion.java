@@ -22,12 +22,19 @@ public class Funktion{
    */
    public static double[] berechneWerte(double array[] ){
 
-        double min = array[0];
+        double sum = 0.0;
         double mittel = 0.0;
+        double min = array[0]
         double max = array[0];
-                                                          // ich hab das mit 3 for schleifen gemacht, min mittel max
-        for (int i = 0; i < array.length; i++){           // ich habe bei jeder for schleife i = 0 , gibt es einen grund für i = 1?
-
+         
+        // Gesamtwert bestimmen
+        for (int i = 0; i < array.length; i++){
+            sum += array[i];
+        }
+        mittel = sum/array.length;
+     
+        for (int i = 0; i < array.length; i++){           
+             
             // Min bestimmen
             if (Math.abs(mittel - array[i]) < Math.abs(mittel - min)){
                  min = array[i];
@@ -39,12 +46,7 @@ public class Funktion{
             }
         }
 
-        // Mittelwert bestimmen
-        for (int i = 0; i < array.length; i++){
-            mittel += array[i];
-        }
-
-        mittel /= array.length;
+       
 
         return new double[] { min, mittel, max };
     }
@@ -68,11 +70,7 @@ public class Funktion{
             }
         }
        return anzahl;
-
     }
-
-
-
 
   /**
    *  insertionSort - Sortiert das uebergebene int-Array
@@ -80,15 +78,15 @@ public class Funktion{
    * @param das Array, das sortiert werden soll
    */
    public static void insertionSort(int[] array){
-     int temp;
+     int aktWert;
         for (int i = 1; i < array.length; i++) {
-            temp = array[i];
+            aktWerr = array[i];
             int j = i;
-            while (j > 0 && array[j - 1] > temp) {
+            while (j > 0 && array[j - 1] > aktWert){
                 array[j] = array[j - 1];
                 j--;
             }
-            array[j] = temp;
+            array[j] = aktWert;
         }
     }
 
