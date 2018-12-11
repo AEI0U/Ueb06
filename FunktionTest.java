@@ -28,7 +28,7 @@ import java.util.Scanner;
    }
 
    /**
-    * run --> laesst die MyUeb6Methods-Test's ablaufen
+    * run() zum Ausfuehren der Tests
     *
     */
    public void run(){
@@ -97,8 +97,8 @@ import java.util.Scanner;
         String[][] testArray = {{"Test", "AbCde", "Polizei", "NIX", "ProgI"},
                               {"Test", "ABcdE", "12Polizei", "!?\\", "Prog1"},
                               {"Test", "ab cd e", "1Polizei2", "N!x", "Pr0gI"},
-                              {"tesT", "a b c", " Pol ", "1234", "text12!"}, // wieso wird hier nur "1" ausgegeben? Das müsste doch "2" sein oder?
-                              {"tEsT", "aBCDe", "Polizei", "ẞß", "Programmierung1"}}; // ßẞ implementiert, zählt mit
+                              {"tesT", "a b c", " Pol ", "1234", "text12!"},
+                              {"tEsT", "aBCDe", "Polizei", "ß", "Programmierung1"}}; 
 
        for (int i = 0; i < arrayAnzahl; i++ ){
           System.out.println("Testarray " + (i+1)+ ": " + java.util.Arrays.toString(testArray[i]) +
@@ -117,15 +117,15 @@ import java.util.Scanner;
 
          System.out.println("Testarray 1: \t" + java.util.Arrays.toString(test1));
          Funktion.insertionSort(test1);
-         System.out.println("\nSortiert: \t" + java.util.Arrays.toString(test1));
+         System.out.println("Sortiert: \t" + java.util.Arrays.toString(test1));
 
          System.out.println("\nTestarray 2: \t" + java.util.Arrays.toString(test2));
          Funktion.insertionSort(test2);
-         System.out.println("\nSortiert: \t" + java.util.Arrays.toString(test2));
+         System.out.println("Sortiert: \t" + java.util.Arrays.toString(test2));
 
          System.out.println("\nTestarray 3: \t" + java.util.Arrays.toString(test3));
          Funktion.insertionSort(test3);
-         System.out.println("\nSortiert: \t" + java.util.Arrays.toString(test3));
+         System.out.println("Sortiert: \t" + java.util.Arrays.toString(test3));
 
    }
 
