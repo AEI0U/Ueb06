@@ -24,7 +24,7 @@ public class Funktion{
 
         double sum = 0.0;
         double mittel = 0.0;
-        double min = array[0]
+        double min = array[0];
         double max = array[0];
          
         // Gesamtwert bestimmen
@@ -54,8 +54,8 @@ public class Funktion{
   /**
    *  berechneAnzahl - gibt die Anzahl reiner Textstrings eines Arrays an
    *
-   * @param  eingabeString   der zu untersuchende String
-   * @return  Anzahl reiner Buchstabenstrings. Strings mit Leerzeichen werden nicht dazugezaehlt
+   * @param  eingabeString der zu untersuchende String
+   * @return  Anzahl reiner Buchstabenstrings. Strings mit Leerzeichen werden nicht dazugezaehlt.
    */
    public static int berechneAnzahl(String[] array){
        int anzahl = array.length;
@@ -64,7 +64,7 @@ public class Funktion{
            // Pattern mit den erlaubten Zeichen
            String pattern ="[a-z,A-Z,ä-ü,Ä-Ü,ß]*“;
            Pattern p = Pattern.compile(pattern);
-           //Matcher zum ueberpruefen, ob das Zeichen im Patter enthalten ist
+           //Matcher zum uebersetzen des Patterns und zum ausfuehren von matches()
            Matcher m = p.matcher(array[i]);
            boolean b = m.matches();
            if(b == false){
